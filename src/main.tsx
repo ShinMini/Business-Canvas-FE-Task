@@ -6,12 +6,15 @@ import theme from './theme';
 import './index.css';
 
 import App from './App.tsx';
+import ReduxProvider from './modules/resource-manager/stores/ReduxProvider.tsx';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<ThemeProvider theme={theme}>
-			<CssBaseline />
-			<App />
-		</ThemeProvider>
+		<ReduxProvider>
+			<ThemeProvider theme={theme}>
+				<CssBaseline />
+				<App />
+			</ThemeProvider>
+		</ReduxProvider>
 	</React.StrictMode>,
 );
