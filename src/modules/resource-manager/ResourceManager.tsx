@@ -4,7 +4,7 @@ import ToastEvent from './components/ToastEvent';
 
 const ResourceManager = () => {
 	return (
-		<div className='w-screen h-screen bg-slate-200'>
+		<div className='w-screen h-screen bg-slate-200 flex overflow-hidden'>
 			<SideContentPanel />
 			<MainContentIframe />
 			<ToastEvent />
