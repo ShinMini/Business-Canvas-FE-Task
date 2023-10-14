@@ -1,4 +1,5 @@
 # Business Canvas FE Task
+![Typed FE Thumbnail video](https://github.com/ShinMini/Business-Canvas-FE-Task/assets/77220824/ea3f72aa-dcd6-4669-b471-af21c856dea1)
 
 ## Description
 
