@@ -1,9 +1,9 @@
-import { RefObject, useEffect } from 'react';
+import { RefObject, useLayoutEffect } from 'react';
 
 type Event = MouseEvent | TouchEvent;
 
 export const useOnOutsideClick = (targetRefs: RefObject<Element>[], onOutSideClick: (event: Event) => void): void => {
-	useEffect(() => {
+	useLayoutEffect(() => {
 		const handleDocumentClick = (event: Event) => {
 			const isTargetClicked = targetRefs.some(ref => {
 				return event.target instanceof Node && ref.current && ref.current.contains(event.target);
