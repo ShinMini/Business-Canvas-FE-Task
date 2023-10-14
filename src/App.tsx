@@ -1,7 +1,7 @@
-import React from 'react';
+import ResourceManager from './modules/resource-manager/ResourceManager';
 
 export default function App() {
 	return (
-		<h1 className="font-bold text-lg">Hello World!</h1>
+		<ResourceManager/>
 	);
 }
