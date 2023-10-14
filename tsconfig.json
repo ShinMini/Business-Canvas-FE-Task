@@ -10,6 +10,7 @@
     "esModuleInterop": false,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
+    "allowArbitraryExtensions": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -23,7 +24,10 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+
+    "typeRoots": ["./node_modules/@types", "./src/@types"],
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
